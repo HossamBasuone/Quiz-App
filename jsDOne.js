@@ -1,7 +1,5 @@
-let test1 =  localStorage.getItem("myKey");
-console.log(JSON.parse(test1));
-let jsonObj=JSON.parse(test1);
-
+let test1 = localStorage.getItem("myKey"); // undefined
+let jsonObj = JSON.parse(test1);
 
 let questions = [
   {
@@ -54,44 +52,39 @@ let questions = [
       { text: "shri", correct: false },
     ],
   },
-  
 ];
-questions.push(jsonObj);
 
+if (jsonObj) {
+  questions.push(...jsonObj);
+}
 
 function createQuestion(questionObject, i) {
+  // console.log("question object = ", questionObject, questionObject.question);
   let blockDiv = document.createElement("div");
   blockDiv.classList.add("block");
 
   let questionTag = document.createElement("h1");
-  questionTag.innerText = questionObject.question;
+  questionTag.innerText = questionObject?.question;
   blockDiv.appendChild(questionTag);
 
-  questionObject.answers.forEach((bassuony) => {
+  questionObject?.answers?.forEach((bassuony) => {
     let answerTag = document.createElement("div");
     answerTag.style.display = "flex";
     answerTag.style.direction = "row";
 
-
-
     let radioTag = document.createElement("input");
     radioTag.name = i;
     radioTag.type = "radio";
-    radioTag.value=bassuony.text;
-    radioTag.id=Math.floor(Math.random()*20000);
-
-
+    radioTag.value = bassuony.text;
+    radioTag.id = Math.floor(Math.random() * 20000);
 
     let textTag = document.createElement("label");
-   textTag.htmlFor=radioTag.id;
-   textTag.classList.add("text")
+    textTag.htmlFor = radioTag.id;
+    textTag.classList.add("text");
     textTag.innerText = bassuony.text;
-
-
 
     answerTag.appendChild(radioTag);
     answerTag.appendChild(textTag);
-    
 
     blockDiv.appendChild(answerTag);
   });
@@ -103,25 +96,21 @@ let drawQuestions = () => {
   let quizDiv = document.getElementById("quiz");
   questions.forEach((hossam, i) => {
     let questionHTML = createQuestion(hossam, i);
-    quizDiv.appendChild(questionHTML);
+    quizDiv?.appendChild(questionHTML);
   });
 };
 drawQuestions();
 
-
-function sumbit(){
-  let result=document.getElementById("result");
-  let counter=0;
-  for(let i=0;i<questions.length;i++){
+function sumbit() {
+  let result = document.getElementById("result");
+  let counter = 0;
+  for (let i = 0; i < questions.length; i++) {
     const selectedAnswer = document.querySelector(`input[name="${i}"]:checked`).value;
-    questions[i].answers.forEach((bassuony) => {
-
-if (bassuony.correct==true&&selectedAnswer==bassuony.text){
-  counter ++ ;
-}
-
-    }); 
-
+    questions[i]?.answers.forEach((bassuony) => {
+      if (bassuony.correct == true && selectedAnswer == bassuony.text) {
+        counter++;
+      }
+    });
   }
-result.innerText="your degree is "+ counter ;
+  result.innerText = "your degree is " + counter;
 }
