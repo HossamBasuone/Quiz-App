@@ -100,12 +100,12 @@ let drawQuestions = () => {
   });
 };
 drawQuestions();
-drawQuestions();
 function deleted(){
   localStorage.clear();
   location.reload();                  
 
 }
+
 function sumbit() {
   let result = document.getElementById("result");
   let counter = 0;
