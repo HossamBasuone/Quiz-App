@@ -32,8 +32,9 @@ function add(){
 
 }
 
+
 function submit() {
-   
+
     let questions = document.getElementsByClassName('question');
     let answers = document.getElementsByClassName('answer');
     let data = [];
@@ -56,7 +57,8 @@ function submit() {
             obj.answers.push(answerObj);
         }
         data.push(obj);
-                window.alert("questions added successfully");
+        window.alert("questions added successfully");
+
     }
 
 
