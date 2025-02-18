@@ -100,7 +100,12 @@ let drawQuestions = () => {
   });
 };
 drawQuestions();
+drawQuestions();
+function deleted(){
+  localStorage.clear();
+  location.reload();                  
 
+}
 function sumbit() {
   let result = document.getElementById("result");
   let counter = 0;
@@ -113,9 +118,4 @@ function sumbit() {
     });
   }
   result.innerText = "your degree is " + counter;
-}
-function deleted(){
-  localStorage.clear();
-  location.reload();                  
-
 }
