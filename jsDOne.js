@@ -114,3 +114,8 @@ function sumbit() {
   }
   result.innerText = "your degree is " + counter;
 }
+function deleted(){
+  localStorage.clear();
+  location.reload();                  
+
+}
