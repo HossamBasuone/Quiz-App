@@ -56,7 +56,7 @@ function submit() {
             obj.answers.push(answerObj);
         }
         data.push(obj);
-        
+                window.alert("questions added successfully");
     }
 
 
