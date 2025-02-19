@@ -2,6 +2,10 @@
 
 A dynamic and interactive quiz application built using **HTML, CSS, and JavaScript**. This app allows users to take quizzes, track their scores, and even create custom quizzes!  
 
+
+![image](https://github.com/user-attachments/assets/2634653b-be20-475b-94c7-c0266541587f)
+
+
 ## ✨ Features  
 
 ✅ **User-Friendly Interface** – Clean and responsive design.  
@@ -47,12 +51,12 @@ Then, open **http://localhost:5500/** in your browser.
 ## 📝 How It Works  
 
 1. Open the quiz app and select a quiz.  
-2. Answer multiple-choice questions within the given time.  
-3. Get instant feedback and see your score at the end.  
-4. Use the quiz maker to create and save custom quizzes.  
+2. Answer multiple-choice questions within the given time.
+3. ![image](https://github.com/user-attachments/assets/1d2449a7-0d7b-40f2-8225-7c7ed204909c)
 
-![image](https://github.com/user-attachments/assets/2634653b-be20-475b-94c7-c0266541587f)
+4. Get instant feedback and see your score at the end.  
+5. Use the quiz maker to create and save custom quizzes.  
 ![image](https://github.com/user-attachments/assets/1d6b7dc9-fb7c-4e74-a9c5-3d1f7aa1bb2a)
-![image](https://github.com/user-attachments/assets/1d2449a7-0d7b-40f2-8225-7c7ed204909c)
+
 
 
