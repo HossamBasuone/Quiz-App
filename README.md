@@ -51,3 +51,8 @@ Then, open **http://localhost:5500/** in your browser.
 3. Get instant feedback and see your score at the end.  
 4. Use the quiz maker to create and save custom quizzes.  
 
+![image](https://github.com/user-attachments/assets/2634653b-be20-475b-94c7-c0266541587f)
+![image](https://github.com/user-attachments/assets/1d6b7dc9-fb7c-4e74-a9c5-3d1f7aa1bb2a)
+![image](https://github.com/user-attachments/assets/1d2449a7-0d7b-40f2-8225-7c7ed204909c)
+
+
